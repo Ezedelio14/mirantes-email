@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Incomplete Profile</title>
+  <title>Company overview</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -26,6 +26,7 @@
     body {
       width: 100vw;
       display: flex;
+      overflow-x: hidden;
       justify-content: center;
     }
 
@@ -54,7 +55,7 @@
       font-weight: bold;
     }
 
-    .user-name {
+    .text-bold {
       font-weight: bold;
     }
 
@@ -74,7 +75,7 @@
 
     #container-help {
       width: 100%;
-      padding: 24px 0;
+      padding: 28px 0;
       text-align: center;
       border-radius: 8px;
       background-color: #F0F2FE;
@@ -120,7 +121,6 @@
 
     .store-container {
       gap: 8px;
-      display: flex;
       height: 34px;
       display: flex;
       padding: 5px 10px;
@@ -136,6 +136,234 @@
 
     .redirect-link {
       color: #0988CD;
+    }
+
+    .package-header {
+      gap: 5px;
+      display: flex;
+    }
+
+    .package-header-title {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .package-header-amount-admins {
+      color: #4F627D;
+    }
+
+    .container-card-border {
+      width: 100%;
+      max-width: 640px;
+      min-height: 139px;
+      border-radius: 8px;
+      border: 1px solid #E2E8F0;
+      background-color: #F0F2FE;
+    }
+
+    .container-package-content {
+      gap: 16px;
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .price-plan {
+      width: 100%;
+      display: flex;
+      border-radius: 8px;
+      margin: 24px 0;
+      background-color: white;
+      justify-content: space-between;
+    }
+
+    .price-plan-content {
+      width: 100%;
+      display: flex;
+      padding: 16px;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .price-plan-label {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .list {
+      gap: 24px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .list-items {
+      gap: 5px;
+      display: flex;
+      align-items: center;
+    }
+
+    .list-item-label {
+      font-size: 16px;
+      color: #000000;
+      font-weight: 500;
+    }
+
+
+    .grid-cols-2 {
+      gap: 32px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .circle-overview {
+      width: 52px;
+      height: 52px;
+      display: flex;
+      border-radius: 100%;
+      align-items: center;
+      justify-content: center;
+      background-color: white;
+    }
+
+
+    .container-card-border-content {
+      padding: 20px;
+    }
+
+    .container-card-border-content>div {
+      display: flex;
+      align-items: center;
+    }
+
+    .bold {
+      font-weight: bold;
+    }
+
+    .circle-overview-desc {
+      margin-left: 16px;
+    }
+
+    .circle-overview-desc .bold {
+      font-size: 18px;
+    }
+
+    .circle-overview-desc .description {
+      color: #4F627D;
+      font-weight: 500;
+    }
+
+    .progress-bar-container {
+      margin-top: 16px;
+    }
+
+    .progress-bar-container>p {
+      font-size: 12px;
+    }
+
+
+    .progress-bar {
+      margin-top: 8px;
+    }
+
+
+
+    .progress-bar-container {
+      display: flex;
+      justify-content: start;
+      flex-direction: column;
+      text-align: left !important;
+      align-items: start !important;
+    }
+
+
+
+    .progress-bar-first {
+      width: 100%;
+      height: 6px;
+      position: relative;
+      border-radius: 100px;
+      background-color: #B9CEFF;
+    }
+
+    .progress-bar-percentage-first {
+      top: 0;
+      left: 0;
+      width: 70%;
+      height: 6px;
+      position: absolute;
+      border-radius: 100px;
+      background-color: #2969FF;
+    }
+
+
+    .progress-bar-secund {
+      width: 100%;
+      height: 6px;
+      position: relative;
+      border-radius: 100px;
+      background-color: #21c45d4e;
+    }
+
+    .progress-bar-percentage-secund {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 6px;
+      position: absolute;
+      border-radius: 100px;
+      background-color: #22C55E;
+    }
+
+
+    .progress-bar-third {
+      width: 100%;
+      height: 6px;
+      position: relative;
+      border-radius: 100px;
+      background-color: #F79E1B4D;
+    }
+
+    .progress-bar-percentage-third {
+      top: 0;
+      left: 0;
+      width: 30%;
+      height: 6px;
+      position: absolute;
+      border-radius: 100px;
+      background-color: #F79E1B;
+    }
+
+
+    .progress-bar-fourth {
+      width: 100%;
+      height: 6px;
+      position: relative;
+      border-radius: 100px;
+      background-color: #E031374D;
+    }
+
+    .progress-bar-percentage-fourth {
+      top: 0;
+      left: 0;
+      width: 80%;
+      height: 6px;
+      position: absolute;
+      border-radius: 100px;
+      background-color: #E03137;
+    }
+
+    @media only screen and (max-width: 600px) {
+      .features {
+        gap: 24px;
+        display: flex;
+        flex-direction: column;
+      }
     }
   </style>
 </head>
@@ -201,22 +429,119 @@
     </header>
 
     <div class="content-container">
-      <span class="title">Perfil Incompleto</span>
+      <span class="title">Atualização Trimestral: Visão Geral do Desempenho da Statement</span>
 
-      <p>Olá <span class="user-name">Carlos👋</span></p>
-      <p>Complete seu perfil agora para receber recomendações de vagas personalizadas e aparecer no radas das maiores empresas.</p>
-      <p>Para completar seu perfil, basta clicar no botão 'Completar Meu Perfil' ou visite <a href="#" class="redirect-link">XXXXXXXXXXXX/XXXXXXXXX</a> e atualize suas informações agora.</p>
+      <p>Olá <span class="text-bold">Carlos👋</span></p>
+      <p>Gostaríamos de compartilhar uma visão geral do desempenho da <span class="text-bold">Mirantes</span> até agora neste trimestre.</p>
 
-      <div>
-        <button class="access-platform">Acessar a tua conta</button>
+      <span class="text-bold">
+        Highlights do Trimestre
+      </span>
+
+
+      <div class="grid-cols-2">
+        <div class="container-card-border">
+          <div class="container-card-border-content">
+            <div>
+              <div class="circle-overview"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19.2097 6.36148C18.1697 4.26148 16.1597 2.71148 13.8297 2.20148C11.3897 1.66148 8.88973 2.24148 6.97973 3.78148C5.05973 5.31148 3.96973 7.60148 3.96973 10.0515C3.96973 12.6415 5.51973 15.3515 7.85973 16.9215V17.7515C7.84973 18.0315 7.83973 18.4615 8.17973 18.8115C8.52973 19.1715 9.04973 19.2115 9.45973 19.2115H14.5897C15.1297 19.2115 15.5397 19.0615 15.8197 18.7815C16.1997 18.3915 16.1897 17.8915 16.1797 17.6215V16.9215C19.2797 14.8315 21.2297 10.4215 19.2097 6.36148Z" fill="#2969FF" />
+                  <path d="M15.2602 21.9984C15.2002 21.9984 15.1302 21.9884 15.0702 21.9684C13.0602 21.3984 10.9502 21.3984 8.94015 21.9684C8.57015 22.0684 8.18015 21.8584 8.08015 21.4884C7.97015 21.1184 8.19015 20.7284 8.56015 20.6284C10.8202 19.9884 13.2002 19.9884 15.4602 20.6284C15.8302 20.7384 16.0502 21.1184 15.9402 21.4884C15.8402 21.7984 15.5602 21.9984 15.2602 21.9984Z" fill="#2969FF" />
+                </svg>
+              </div>
+              <div class="circle-overview-desc">
+                <span class="bold">86</span>
+                <br />
+                <span class="description">Vagas Criadas</span>
+              </div>
+            </div>
+            <div class="progress-bar-container">
+              <p>Em Processo 70%</p>
+              <div class="progress-bar progress-bar-first">
+                <div class="progress-bar-percentage-first"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-card-border">
+          <div class="container-card-border-content">
+            <div>
+              <div class="circle-overview"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 1C5.925 1 1 5.925 1 12C1 18.075 5.925 23 12 23C18.075 23 23 18.075 23 12C23 5.925 18.075 1 12 1ZM16.768 10.14C16.8558 10.0396 16.9226 9.92274 16.9646 9.79617C17.0065 9.6696 17.0227 9.53591 17.0123 9.40298C17.0018 9.27005 16.9648 9.14056 16.9036 9.02213C16.8423 8.90369 16.758 8.79871 16.6555 8.71334C16.5531 8.62798 16.4346 8.56396 16.3071 8.52506C16.1796 8.48616 16.0455 8.47316 15.9129 8.48683C15.7802 8.50049 15.6517 8.54055 15.5347 8.60463C15.4178 8.66872 15.3149 8.75554 15.232 8.86L10.932 14.019L8.707 11.793C8.5184 11.6108 8.2658 11.51 8.0036 11.5123C7.7414 11.5146 7.49059 11.6198 7.30518 11.8052C7.11977 11.9906 7.0146 12.2414 7.01233 12.5036C7.01005 12.7658 7.11084 13.0184 7.293 13.207L10.293 16.207C10.3913 16.3052 10.5089 16.3818 10.6384 16.4321C10.7679 16.4823 10.9065 16.505 11.0453 16.4986C11.184 16.4923 11.32 16.4572 11.4444 16.3954C11.5688 16.3337 11.6791 16.2467 11.768 16.14L16.768 10.14Z" fill="#22C55E" />
+                </svg>
+              </div>
+              <div class="circle-overview-desc">
+                <span class="bold">50</span>
+                <br />
+                <span class="description">Contratados</span>
+              </div>
+            </div>
+            <div class="progress-bar-container">
+              <p>Processado 100%</p>
+              <div class="progress-bar progress-bar-secund">
+                <div class="progress-bar-percentage-secund"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-card-border">
+          <div class="container-card-border-content">
+            <div>
+              <div class="circle-overview"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11.9998 17.7519L5.82784 20.9969L7.00684 14.1239L2.00684 9.25691L8.90684 8.25691L11.9928 2.00391L15.0788 8.25691L21.9788 9.25691L16.9788 14.1239L18.1578 20.9969L11.9998 17.7519Z" fill="#FACC15" />
+                </svg>
+              </div>
+              <div class="circle-overview-desc">
+                <span class="bold">10,841</span>
+                <br />
+                <span class="description">Candidatos</span>
+              </div>
+            </div>
+            <div class="progress-bar-container">
+              <p>3,736 Perfis analisados</p>
+              <div class="progress-bar progress-bar-third">
+                <div class="progress-bar-percentage-third"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-card-border">
+          <div class="container-card-border-content">
+            <div>
+              <div class="circle-overview"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M19.739 6.15442C19.739 3.40354 17.8583 2.30078 15.1506 2.30078H8.79167C6.16711 2.30078 4.2002 3.32835 4.2002 5.97096V20.6948C4.2002 21.4206 4.98115 21.8777 5.61373 21.5228L11.9957 17.9429L18.3225 21.5168C18.9561 21.8737 19.739 21.4166 19.739 20.6898V6.15442Z" fill="#E03137" />
+                </svg>
+              </div>
+              <div class="circle-overview-desc">
+                <span class="bold">5</span>
+                <br />
+                <span class="description">Guardados</span>
+              </div>
+            </div>
+            <div class="progress-bar-container">
+              <p>20% Aproveitados</p>
+              <div class="progress-bar progress-bar-fourth">
+                <div class="progress-bar-percentage-fourth"></div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <p>Se quiser ver algumas dicas de como pode preencher o teu perfil de uma forma mais profissional visite <a href="#" class="redirect-link">XXXXXXXXXXXX/XXXXXXXXX</a></p>
+
+
+      <div>
+        <button class="access-platform">Visualizar Dashboard</button>
+      </div>
 
       <p>Obrigado,<br />Mirantes Technologies.</p>
       <div id="container-help">
-        <div style="margin-bottom: 8px;"> <span id="container-help-title">Você precisa de ajuda?</span></div>
-        <a href="" id="container-help-link">Estamos aqui, prontos para conversar</a>
+        <div>
+          <div style="margin-bottom: 8px;"> <span id="container-help-title">Você precisa de ajuda?</span></div>
+          <a href="" id="container-help-link">Estamos aqui, prontos para conversar</a>
+        </div>
       </div>
     </div>
 
