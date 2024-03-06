@@ -25,7 +25,11 @@
 
     body {
       width: 100vw;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
       justify-content: center;
     }
 
@@ -37,15 +41,25 @@
 
     header {
       width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
       margin-bottom: 40px;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
       align-items: center;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
       justify-content: space-between;
     }
 
     .social-media {
       gap: 10px;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
       align-items: center;
     }
 
@@ -60,17 +74,18 @@
 
     .content-container {
       gap: 24px;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
       margin-bottom: 24px;
+      -ms-flex-direction: column;
       flex-direction: column;
     }
-
 
     #link-to-browser {
       font-size: 16px;
       color: #0988CD !important;
     }
-
 
     #container-help {
       width: 100%;
@@ -88,19 +103,23 @@
 
     footer {
       gap: 24px;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
       margin-top: 24px;
+      -ms-flex-direction: column;
       flex-direction: column;
     }
 
     footer p {
-
       font-size: 16px;
       color: #202B3C;
     }
 
     .stores {
       gap: 10px;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
     }
 
@@ -111,7 +130,8 @@
     .store-container {
       gap: 8px;
       height: 34px;
-      display: flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
       padding: 5px 10px;
       border-radius: 8px;
@@ -124,6 +144,7 @@
       font-weight: bold;
     }
   </style>
+
 </head>
 
 <body>
